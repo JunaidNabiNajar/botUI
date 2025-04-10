@@ -1,0 +1,19 @@
+
+<html>
+<body>
+<script>
+    !function (win, doc, scriptSrc, appId) {
+      // create bot div element
+      var botDiv = doc.createElement("div"); botDiv.id = 'appId_bot_div'; doc.body.appendChild(botDiv);
+      // create script element
+      var svz = doc.getElementsByTagName("script")[0], svar = doc.createElement("script"); svar.defer = true; svar.src = scriptSrc;
+      // verify and setup
+      svar.onload = function () {
+        win.ELAsstiant.initialize({ appId: appId, env: "ACAD1", copyParentTheme: true, whatsAppLink: "+919902134377" }, botDiv.id);
+      };
+      svz.parentNode.insertBefore(svar, svz);
+    }(window, document, "https://storage.googleapis.com/17d84a62bfae0c05e940e9d8668ed0029429c724/public/chat-widget/scripts/emlylabs-botcore-6.10.js",
+      "job-908eeb27-4f2f-4935-beae-9b01af7bc87d");
+  </script>
+</body>
+</html>
